@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+.app {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  margin-left: -50px;
+  margin-top: -100px;
+}
+.login {
+  padding-bottom: 20px;
+}
+.App-header {
+  background-color: #8eadeb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+.button1 {
+  background-color: #031f7a;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
