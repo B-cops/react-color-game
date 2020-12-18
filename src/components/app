@@ -1,0 +1,41 @@
+import React, { Component } from "react";
+import './App.css';
+import HowToPlay from './components/HowToPlay.jsx';
+import {BrowserRouter , Route , Link} from 'react-router-dom';
+
+import Game from "./components/Game";
+
+class App extends Component {
+  state = {
+    displaySignUpInfo : false,
+    displayGame : false
+  }
+
+  handleClickPlay = () => this.state({
+    displayGame : !displayGame
+  })
+
+  handleClickHowToPlay = () => this.setState({
+    displaySignUpInfo : !this.state.displaySignUpInfo
+  })
+  render() {
+    const showGame = this.state.displayGame? ():();
+    const showHowToPlay = this.state.displaySignUpInfo? (<HowToPlay />):(<div></div>);
+    return(
+      <div class="app">
+      <h1>b rain</h1>
+
+      <div class="play">
+      <button className="button1" >Play</button>
+    </div>
+
+      <div class="HowToPlay">
+        <br />
+          <button className="button1" onClick={this.handleClickHowToPlay}>How to play</button><br /><br />
+        </div> 
+        
+        {showHowToPlay}
+    </div>
+    }}
+
+export default App;

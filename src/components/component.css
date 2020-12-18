@@ -1,12 +1,15 @@
-.blue {
+.blueOff {
+  background-color: rgb(130, 132, 255);
   border: none;
   height: 115px;
   width: 115px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 2.5px;
 }
-.red {
+.redOff {
+  background-color: rgb(255, 183, 183);
   border: none;
   height: 115px;
   width: 115px;
@@ -14,7 +17,8 @@
   margin-left: 2.5px;
   margin-right: 5px;
 }
-.green {
+.greenOff {
+  background-color: rgb(175, 250, 187);
   border: none;
   height: 115px;
   width: 115px;
@@ -22,7 +26,46 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.yellow {
+.yellowOff {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  height: 115px;
+  width: 115px;
+  margin-top: 2.5px;
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  margin-right: 5px;
+}
+.blueOn {
+  background-color: blue;
+  border: none;
+  height: 115px;
+  width: 115px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 2.5px;
+}
+.redOn {
+  background-color: rgb(246, 37, 37);
+  border: none;
+  height: 115px;
+  width: 115px;
+  margin-top: 5px;
+  margin-left: 2.5px;
+  margin-right: 5px;
+}
+.greenOn {
+  background-color: rgb(19, 241, 19);
+  border: none;
+  height: 115px;
+  width: 115px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.yellowOn {
+  background-color: rgb(255, 255, 0);
   border: none;
   height: 115px;
   width: 115px;
