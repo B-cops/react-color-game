@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
 import HowToPlay from './components/HowToPlay.jsx';
-import {BrowserRouter , Route , Link} from 'react-router-dom';
-import ButtonPlay from './components/ButtonPlay';
 import Game from "./components/Game.jsx";
 
 class App extends Component {

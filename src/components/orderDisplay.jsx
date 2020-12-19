@@ -1,6 +1,6 @@
 export default function OrderDisplay(object, i) {
     
-    switch(object.order[object.i]) {
+    switch(object.order[i]) {
         case 0:
             return {
                 tabTempo : [{color:'blueOn'},{color:'redOff'},{color:'greenOff'},{color:'yellowOff'},{color:'white'},],

@@ -1,15 +1,14 @@
-export default function AddRandom(object) {
+export default function AddRandom(object, i) {
     
     function getRandomInt() {
         return Math.floor(Math.random() * Math.floor(object.four));
     }
     function addNewColorIndex0() {
-        object.order[object.index] = getRandomInt();
+        object.order[i] = getRandomInt();
         return 0;
     }
         addNewColorIndex0();
-    return {
-        four : 4
-    };
-      
-}
+        return {
+            four : 4
+        }
+    }
