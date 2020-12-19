@@ -1,5 +1,5 @@
 .blueOff {
-  background-color: rgb(130, 132, 255);
+  background-color: rgb(176, 178, 255);
   border: none;
   height: 115px;
   width: 115px;
@@ -18,7 +18,7 @@
   margin-right: 5px;
 }
 .greenOff {
-  background-color: rgb(175, 250, 187);
+  background-color: rgb(162, 255, 178);
   border: none;
   height: 115px;
   width: 115px;
@@ -27,7 +27,7 @@
   margin-right: 5px;
 }
 .yellowOff {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 255, 227);
   border: none;
   height: 115px;
   width: 115px;
@@ -56,7 +56,7 @@
   margin-right: 5px;
 }
 .greenOn {
-  background-color: rgb(19, 241, 19);
+  background-color: rgb(23, 255, 23);
   border: none;
   height: 115px;
   width: 115px;

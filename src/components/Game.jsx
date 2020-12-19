@@ -17,6 +17,7 @@ state = {
         clickNext: "",
         clickNew: "",
         colorNumbr : 4,
+        levelUp:false,
         trueFalse : true,
         answerNumbr: 0,
         index : 0,
@@ -37,6 +38,7 @@ state = {
     handleClick2 = () => {this.setState(OrderTrue(this.state, 2));return 2;};
     handleClick3 = () => {this.setState(OrderTrue(this.state, 3));return 3;};
     displayAndVerif = () => {
+      if (this.state.levelUp==true){
       this.state.correct="";
       this.state.clickNext="";
       this.state.level = this.state.level +1 ;
@@ -45,15 +47,18 @@ state = {
         setTimeout(() => {this.setState(OrderDisplay(this.state, i))}, time);
         time = time + 500;
         setTimeout(() => {this.setState(DefaultColor(this.state))}, time);
+        time = time + 140;
+        setTimeout(() => {this.setState(DefaultColor(this.state))}, time);
       }
       this.setState(AddRandom(this.state,this.state.order.length));
-      this.state.index = 0;
+      this.state.index = 0;}
     };
 
     handleClickStart = () => {
       this.state.order = new Array();
       this.state.index = 0;
       this.state.newGameButton = true;
+      this.state.levelUp= true;
       this.state.trueFalse=true;
       this.state.level = 0;
       this.state.loser = "";
@@ -71,21 +76,26 @@ state = {
         this.state.order = new Array();
         this.state.index = 0;
         this.state.level = 0;
+        this.state.levelUp= false;
         this.state.loser = "loser";
         this.state.clickNew="click on new game";
         return <h3 className="loser">{this.state.loser}<br />{this.state.clickNew}</h3>
       }else if ((this.state.trueFalse==true)&&((this.state.index+1)==this.state.order.length)&&(!(this.state.order.length==0))) {
         this.state.correct ="correct answer !";
         this.state.clickNext= "click on next level";
+        this.state.levelUp= true;
         return <h3 className="loser">{this.state.correct}<br />{this.state.clickNext}</h3>
       }else if(this.state.level==1){
 
         if (this.state.newGameButton==false){
+          this.state.levelUp= false;
         return <h3 className="loser">click on new game</h3>
       }else{
+        this.state.levelUp= false;
         return <h3 className="loser">choose {this.state.level} color</h3>
       }}
       else {
+        this.state.levelUp= false;
         return <h3 className="loser">choose {this.state.level} colors</h3>
       }
     }
@@ -94,7 +104,7 @@ state = {
         <div>
         <div className="gameColor">
         <button onClick={this.handleClickStart} className="button1" >new game</button>
-        <button onClick={this.displayAndVerif} className="button1">next level({this.state.level})</button>
+        <button onClick={this.displayAndVerif} className="button1">next level{this.state.level}</button>
         {this.wrongAnswer()}
         <button onClick={this.handleClick0} className={this.state.tabTempo[0].color}></button>
         <button onClick={this.handleClick1} className={this.state.tabTempo[1].color}></button>
