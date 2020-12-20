@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './component.css'
 import '../App.css'
+import App from '../App'
 import OrderTrue from './OrderTrue'
 import OrderDisplay from './OrderDisplay'
 import DefaultColor from './DefaultColor'

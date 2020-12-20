@@ -33,3 +33,17 @@
   margin: 4px 2px;
   border-radius: 12px;
 }
+.button2 {
+  background-color: #031f7a;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  top: 0%;
+  left: 0%;
+}
